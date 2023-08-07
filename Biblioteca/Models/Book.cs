@@ -7,7 +7,8 @@ namespace Biblioteca.Models
     public class Book
     {
         public int Id { get; set; }
-        [Required] 
+        [Required]
+        [Display(Name = "Titulo")]
         public string? Title { get; set; }
         public string? ISBN { get; set; }
         public Publisher? Publisher { get; set; }
